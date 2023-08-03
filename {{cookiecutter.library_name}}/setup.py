@@ -1,10 +1,10 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='minha_biblioteca',
-    version='1.0.0',
-    author='Seu Nome',
-    author_email='seu.email@example.com',
+    name='{{cookiecutter.library_name}}',
+    version='{{cookiecutter.version}}',
+    author='{{cookiecutter.author_name}}',
+    author_email='{{cookiecutter.email}}',
     description='Uma descrição breve da sua biblioteca',
     long_description='Uma descrição mais detalhada da sua biblioteca', # Pode ser um arquivo README.md
     long_description_content_type='text/markdown',  # Indica o tipo do conteúdo da long_description

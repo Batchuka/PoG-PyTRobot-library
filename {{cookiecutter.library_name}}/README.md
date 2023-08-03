@@ -1,4 +1,4 @@
-# {{library_name}}
+# {{cookiecutter.library_name}}
 
 [![Build Status]()]()
 [![Coverage Status]()]()
