@@ -1,4 +1,4 @@
-#  PyTRobot — Robô Transacional com Python
+#  Faça uma biblioteca para o PyTRobot
 
 ## Visão geral
 
