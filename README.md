@@ -1,26 +1,32 @@
-#  Faça uma biblioteca para o PyTRobot
+#  Faça sua biblioteca para o PyTRobot
 
-## Visão geral
+Este é um template para iniciar rapidamente bibliotecas gerais de python, mas voltado para o PyTRObot, usando o Cookiecutter.
 
-O projeto é um state pattern baseado em Dispatcher e Performer. O objetivo é fornecer um scaffold para uma automação python transacional.
+## Como Usar
 
-## Executando o projeto
+1. Certifique-se de ter o Cookiecutter instalado:
 
-O projeto é implementado para ser executado em um ambiente on-premises linux em conjuto com um serviço *Jenkins*. Este é responsável por fazer o build e deploy do agente. Logo, sua execução **Depende** do *Jenkins*.
+```
+pip install cookiecutter
+```
 
-Esse projeto possui dois scripts na pasta *docs*:
+2. Clone este repositório:
 
-> obs: esses arquivos estão na pasta do projeto apenas para documentação. Seu uso é feito através do dashboard Jenkins.
+```
+cookiecutter https://github.com/Batchuka/PoG-PyTRobot-library.git
+```
 
-- delivery.jenkinsfile — utilizado para build e deploy do projeto;
-- launch.jenkinsfile — utilizado para iniciar execução do projeto na máquina.
-
-Ao final do deploy, o agente é iniciado automaticamente, mas caso não seja o script de launch pode ser empregado. 
+3. O cookiecutter irá pedir nome do pacote 'library_name' e o nome da classe principal, 'class_name'. Dê o nome ao pacote e a classe principal, que deve ser usada para implementar as configurações e interface do pacote. Após isso, seu nome, email e versão do pacote.
 
 
-## Dependências globais
+4. Seu novo projeto será criado no diretório especificado.
 
-- É necessário configurar um serviço Jenkins
-- É necessário configurar filas no AWS SQS
-- É necessário configurar Access Keys de um IAM AWS configuradas no ambiente
 
+5. Após implementado o pacote, implemente também os testes unitários que serão utilizados pelo *tox* no pipeline de publicação.
+
+
+6. Após implementados os testes, você pode configurar o *tox* para publicar o pacote em seu repositório de preferência.
+
+## Contribuição
+
+Se você encontrar algum problema ou tiver sugestões para melhorias, fique à vontade para abrir uma issue ou enviar um pull request!
