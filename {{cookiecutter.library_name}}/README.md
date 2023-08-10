@@ -12,7 +12,7 @@ pip install {{cookiecutter.library_name}}
 
 # Uso
 
-O pacote deve ser importado como qualquer outro e precisa ser configurado. No arquivo package_config.py, é implementada a classe {{class_name}}, responsável por implementar os métodos e propriedades de configuração e interface desse pacote. Sinta-se a vontade para preencher as informações necessárias da forma que quiser — o framework PyTRobot oferece o método [load_config](), que automaticamente preenche todas as configurações de um pacote baseado no arquivo *.properties*, explore essa lógica para mais detalhes.
+O pacote deve ser importado como qualquer outro e precisa ser configurado. No arquivo package_config.py, é implementada a classe {{cookiecutter.class_name}}, responsável por implementar os métodos e propriedades de configuração e interface desse pacote. Sinta-se a vontade para preencher as informações necessárias da forma que quiser — o framework PyTRobot oferece o método [load_config](), que automaticamente preenche todas as configurações de um pacote baseado no arquivo *.properties*, explore essa lógica para mais detalhes.
 
 
 # Adicionando Novos Módulos
